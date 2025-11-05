@@ -1,0 +1,124 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0" version="28.0.7">
+  <diagram name="Pagina-1" id="dtVQ-0RQI7uhPceEBpSu">
+    <mxGraphModel dx="1769" dy="1811" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-46" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="990" width="1230" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-37" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="680" width="1230" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-35" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="98" width="1230" height="532" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-1" target="Hg9QAnA8Cp_SizCG1Cc_-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-50" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-2" target="Hg9QAnA8Cp_SizCG1Cc_-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-2" target="Hg9QAnA8Cp_SizCG1Cc_-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-2" value="INFO:&lt;div&gt;this node will provide info to the user about how to provide info.&lt;/div&gt;&lt;div&gt;If the user do not provide all the info required then keeps iterating on the INFO node&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="110" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-8" value="1. get user input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="68" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-9" value="2. user input to llm" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="414" y="290" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-13" target="Hg9QAnA8Cp_SizCG1Cc_-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-13" value="TOOL (it updates the state with a Tool Msg in which the user input has been stored)" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="760" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-21" target="Hg9QAnA8Cp_SizCG1Cc_-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-21" value="get_state (decide next node)&lt;div&gt;if the LLM has used the tool&lt;/div&gt;&lt;div&gt;then all the data are present.&lt;/div&gt;&lt;div&gt;So go to &quot;add_tool_message&quot;&amp;nbsp;&lt;/div&gt;&lt;div&gt;node.&lt;/div&gt;&lt;div&gt;Otherwise back to INFO&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="292.5" y="350" width="235" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-23" target="Hg9QAnA8Cp_SizCG1Cc_-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-23" value="LLM" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="155" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-25" value="1.A) send user input to LLM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="505" y="150" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-27" value="1.B) LLM can decide to use the tool or NOT.&amp;nbsp;&lt;div&gt;If the user input has the data then it uses it otherwise not&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="630" y="293" width="320" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-21" target="Hg9QAnA8Cp_SizCG1Cc_-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-50" y="470" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="273" y="465" />
+              <mxPoint x="273" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-30" target="Hg9QAnA8Cp_SizCG1Cc_-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-130" y="-10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-30" value="END" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="430" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-32" value="This arrow represents the while: True loop" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-195" y="-52" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-36" value="INFO NODE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1100" y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-38" value="TOOL NODE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="700" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-39" value="new iteration in the graph loop" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="350" y="648" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-43" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-40" target="Hg9QAnA8Cp_SizCG1Cc_-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Hg9QAnA8Cp_SizCG1Cc_-40" target="Hg9QAnA8Cp_SizCG1Cc_-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-40" value="&lt;div style=&quot;background-color:#1e1f22;color:#bcbec4&quot;&gt;&lt;pre style=&quot;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9,8pt;&quot;&gt;&lt;span style=&quot;color:#6aab73;&quot;&gt;prompt NODE&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-42" value="LLM" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="770" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-44" value="3) Tells the LLM to create a prompt template&lt;div&gt;&amp;nbsp;with the user informations stored in the state&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1053" width="260" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-47" value="PROMPT NODE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="1010" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hg9QAnA8Cp_SizCG1Cc_-48" value="new iteration in graoh loop" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="950" width="200" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
