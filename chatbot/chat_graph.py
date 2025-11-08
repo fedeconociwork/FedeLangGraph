@@ -8,6 +8,7 @@ from langgraph.graph.state import CompiledStateGraph
 from langgraph.prebuilt import ToolNode
 from typing_extensions import TypedDict
 
+from chatbot.human_tools import human_assistance, get_user_info
 from chatbot.web_search import serpapi
 
 
@@ -18,12 +19,11 @@ class State(TypedDict):
     messages: Annotated[list, add_messages]
 
 
-AVAILABLE_TOOLS = [serpapi]
+AVAILABLE_TOOLS = [serpapi, human_assistance, get_user_info]
 
 
 def create_chat_model():
     chat_model = init_chat_model(model="ollama:qwen3:0.6b", reasoning=True, num_predict=1000, temperature=0.0)
-
     return chat_model.bind_tools(AVAILABLE_TOOLS)
 
 

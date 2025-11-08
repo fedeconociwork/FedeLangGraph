@@ -5,3 +5,4 @@ langchain-ollama
 langsmith
 serpapi
 google-search-results
+langgraph-checkpoint-postgres
