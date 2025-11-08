@@ -1,1 +1,2 @@
-fede_llm/capstone/api/.env
+.env
+.venv/
