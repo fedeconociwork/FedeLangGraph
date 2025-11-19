@@ -95,7 +95,7 @@ def search_web(state: State):
 
 
 def should_continue(state: State):
-    if state["search_web_query"]:
+    if state.get("search_web_query"):
         return "search_web"
     return END
 
