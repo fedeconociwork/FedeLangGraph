@@ -1,8 +1,10 @@
 import os
-from serpapi import GoogleSearch
+
 from dotenv import load_dotenv
-from langchain_core.tools import tool
+from langchain_community.utilities import SerpAPIWrapper
+from langchain_core.tools import tool, Tool
 from pydantic import BaseModel
+from serpapi import GoogleSearch
 
 
 # we use the article object for parsing serpapi results later
@@ -21,6 +23,7 @@ class Article(BaseModel):
             snippet=result["snippet"],
         )
 
+
 @tool
 def serpapi(query: str) -> list[Article]:
     """Use this tool to search the web."""
@@ -36,6 +39,5 @@ def serpapi(query: str) -> list[Article]:
 
     search = GoogleSearch(params)
     results = search.get_dict()
-
     return [Article.from_serpapi_result(organic_result) for organic_result in results["organic_results"]]
     # return [Article.from_serpapi_result({"title": "Weather in Lecce", "source": "google.it", "link": "www.google.it", "snippet": "Weather is good"})]

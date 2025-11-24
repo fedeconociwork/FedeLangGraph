@@ -5,9 +5,9 @@ from langgraph.constants import START, END
 from langgraph.graph import StateGraph
 from langgraph.graph.message import add_messages
 from langgraph.graph.state import CompiledStateGraph
+from langgraph.prebuilt import ToolNode
 from typing_extensions import TypedDict
 
-from chatbot.ToolHandler import BasicToolNode
 from chatbot.web_search import serpapi
 
 
@@ -18,9 +18,13 @@ class State(TypedDict):
     messages: Annotated[list, add_messages]
 
 
+AVAILABLE_TOOLS = [serpapi]
+
+
 def create_chat_model():
-    chatModel = init_chat_model(model="ollama:qwen3:0.6b", reasoning=True, num_predict=1000, temperature=0.0)
-    return chatModel.bind_tools([serpapi])
+    chat_model = init_chat_model(model="ollama:qwen3:0.6b", reasoning=True, num_predict=1000, temperature=0.0)
+
+    return chat_model.bind_tools(AVAILABLE_TOOLS)
 
 
 def __route_tools__(state: State):
@@ -41,7 +45,7 @@ def __route_tools__(state: State):
     return END
 
 
-def chatbot(state: State):
+def handle_graph_state(state: State):
     chat_model_with_tools = create_chat_model()
     return {"messages": [chat_model_with_tools.invoke(state["messages"])]}
 
@@ -49,8 +53,8 @@ def chatbot(state: State):
 def build_graph() -> CompiledStateGraph:
     graph_builder = StateGraph(State)
     # add nodes
-    graph_builder.add_node("chatbot", chatbot)
-    tool_node = BasicToolNode(tools=[serpapi])
+    graph_builder.add_node("chatbot", handle_graph_state)
+    tool_node = ToolNode(tools=AVAILABLE_TOOLS)
     graph_builder.add_node("tools", tool_node)
 
     # add edges
