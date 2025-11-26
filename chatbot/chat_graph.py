@@ -47,7 +47,8 @@ def __route_tools__(state: State):
 
 def handle_graph_state(state: State):
     chat_model_with_tools = create_chat_model()
-    return {"messages": [chat_model_with_tools.invoke(state["messages"])]}
+    response = chat_model_with_tools.invoke(state["messages"])
+    return {"messages": [response]}
 
 
 def build_graph() -> CompiledStateGraph:

@@ -1,0 +1,95 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0" version="28.0.7">
+  <diagram name="Pagina-1" id="_AB9pPL5bDHmzUOfvDV0">
+    <mxGraphModel dx="1505" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-35" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="930" width="840" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="220" width="980" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-1" target="A1qi0LkdSqrhN3HHsvUP-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-1" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="50" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-3" value="1. Gather user input" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="295" y="178" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-4" target="A1qi0LkdSqrhN3HHsvUP-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-4" value="chatbot" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-6" value="Chatbot Node" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="240" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-9" value="LLM" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="730" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-11" value="1.A) Send user input to LLM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="510" y="240" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-13" target="A1qi0LkdSqrhN3HHsvUP-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-13" target="A1qi0LkdSqrhN3HHsvUP-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-13" value="should_continue: will go to&lt;div&gt;&amp;nbsp;next node&amp;nbsp;&lt;div&gt;if the tool to gather user info has&amp;nbsp;&lt;/div&gt;&lt;div&gt;been used (the state has the query search variable)&lt;/div&gt;&lt;div&gt;Otherwise go to END&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="350" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-16" target="A1qi0LkdSqrhN3HHsvUP-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-50" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-16" value="END" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-90" y="390" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-20" target="A1qi0LkdSqrhN3HHsvUP-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-20" value="search web NODE:&lt;div&gt;the node will provide a new prompt to the LLM instructing him to perform a web search.&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="940" width="230" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-30" value="next loop in graph stream" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1160" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-9" target="A1qi0LkdSqrhN3HHsvUP-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="998.56" y="348" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-39" value="1.B) if user wants to search the web LLM build the query" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="870" y="280" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-40" target="A1qi0LkdSqrhN3HHsvUP-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-40" value="if the user wants&lt;div&gt;&amp;nbsp;to search the web&lt;/div&gt;&lt;div&gt;&amp;nbsp;then use the tool to&amp;nbsp;&lt;div&gt;store the query&lt;div&gt;and return&lt;/div&gt;&lt;div&gt;&amp;nbsp;the state with&lt;/div&gt;&lt;div&gt;&amp;nbsp;query search string&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="350" width="190" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-42" value="Next step in the graph loop" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="810" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="A1qi0LkdSqrhN3HHsvUP-43" target="A1qi0LkdSqrhN3HHsvUP-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="A1qi0LkdSqrhN3HHsvUP-43" value="TOOL NODE:&lt;div&gt;the node invokes the search web api.&lt;/div&gt;&lt;div&gt;Then it will add a new message to the state of type ToolMessage&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="285" y="1290" width="230" height="170" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
